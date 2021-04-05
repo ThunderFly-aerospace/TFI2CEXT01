@@ -4,7 +4,7 @@
 
   (title_block
     (title "TFI2CEXT01A")
-    (date "2021-01-23")
+    (date "2021-04-05")
     (company "ThunderFly s.r.o.")
     (comment 1 "I2C expander")
     (comment 2 "Jacho  <info@thunderfly.cz>")
@@ -897,7 +897,7 @@
     (uuid 66dbbaf5-db58-4b9e-8143-1fb2f7d4f370)
   )
 
-  (text "BZX585-B5V6.115 NEXPERIA" (at 57.15 180.34 180)
+  (text "BZX585-B5V6.115 NEXPERIA" (at 63.5 161.925 180)
     (effects (font (size 1.524 1.524)) (justify right bottom))
     (uuid 9464b6ce-4faa-4eba-b3fa-4100d4265988)
   )
