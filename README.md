@@ -47,3 +47,8 @@ The TCA4307 has stuck bus recovery, which automatically disconnects the slave si
 ![PCB dimensions](doc/img/TFI2CEXT01A_PCB_dimensions.png)
 
 The PCB is designed to be mounted in the slit and fixed by screws on the sides. The supposed screw diameter is metric 3mm e.g. DIN 912 M3 Hexagon socket Head Cap Screws.
+
+### Connection 
+
+Due to device reset capability of TFI2CEXT01 the special attention should be cared to proper connection of the module. The connector closer to the LEDS should be connected to Master (e.g. autopilot). The opopsite connector at far side from LEDs should be connected to I²C slaves, e.g. sensors. 
+
