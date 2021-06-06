@@ -38,6 +38,10 @@ The two I²C Pixhawk connectors on the bottom and top are connected directly to 
 
 ![Bottom view on I2C bus extender](/doc/img/TFI2CEXT01A_bot.png)
 
+### Device Reset
+
+The TCA4307 has stuck bus recovery, which automatically disconnects the slave side of bus from master if it detects either SDAOUT or SCLOUT are low for about 40 ms. Once the bus is disconnected, the device automatically generates up to 16 pulses on SCLOUT to attempt to reset a device which is holding the whole bus low. 
+
 ### PCB dimensions
 
 ![PCB dimensions](doc/img/TFI2CEXT01A_PCB_dimensions.png)
