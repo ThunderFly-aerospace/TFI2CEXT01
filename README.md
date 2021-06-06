@@ -48,6 +48,11 @@ The TCA4307 has stuck bus recovery, which automatically disconnects the slave si
 
 The PCB is designed to be mounted in the slit and fixed by screws on the sides. The supposed screw diameter is metric 3mm e.g. DIN 912 M3 Hexagon socket Head Cap Screws.
 
+## Usage
+
+The most I2C bus instances benefits from situation where TFI2CEXT will be connected in the middle of lenght beween master and slave. In that position the active signal amplification of TFI2CEXT will be the most efective for both signalling direction. 
+However, in the practical world not all I2C devices has the same driving capability and I2C signals are the mostly affected by capacitive load or coupling of unwanted signals. TFI2CEXT has ability to efectivelly isolate signal in the bus segments, which result to that the slave device or masters sees only a I²C bus wiring load in segment, until the connection to the TFI2CEXT. Therefore for that situation the adding the TFI2CEXT closer to the "problematic" I²C device should be the best option. 
+
 ### Connection 
 
 Due to device reset capability of TFI2CEXT01 the special attention should be cared to proper connection of the module. The connector closer to the LEDS should be connected to Master (e.g. autopilot). The opopsite connector at far side from LEDs should be connected to I²C slaves, e.g. sensors. 
