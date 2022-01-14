@@ -18,9 +18,9 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 | I2C Connector | 2x 4-pin JST-GH | Connected in parallel |
 | Operating and storage temperature | -20 - +40°C | Limited by case material |
 | Operational input voltage | 3.6 - 5.4V |  |
-| Mass | 2 g + 4 g | PCB + case |
-| Dimensions | TBD | TBD |
-| Weather resistance | TBD |  |
+| Mass | ~2 g | PCB |
+| Dimensions | 15x25x6(10.5) | One sided connectors (With connector on both sides) |
+| Weather resistance | IP00 |  |
 
 ## Features
 
