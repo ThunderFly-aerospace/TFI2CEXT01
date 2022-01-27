@@ -1,4 +1,4 @@
-# TFI2C01A - I²C bus extender
+# TFI2CEXT01A - I²C bus extender
 
 I²C bus extension module. This module allows extension of total lenght of I2C bus on the UAV.
 
