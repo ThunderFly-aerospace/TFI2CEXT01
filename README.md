@@ -8,7 +8,7 @@ I²C bus extension module. This module allows extension of total lenght of I2C b
 
 ## Where to get it?
 
-ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/), write an email to info@thunderfly.cz
+ThunderFly TFI2CEXT01A counter is commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/), write an email to info@thunderfly.cz. Or shop it on [Tindie.com](https://www.tindie.com/products/thunderfly/tfi2cext01-pixawk-i2c-bus-extender/)
 
 ## Parameters
 
