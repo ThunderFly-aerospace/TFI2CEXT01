@@ -25,7 +25,7 @@ ThunderFly TFI2CEXT01A counter is commercially available from [ThunderFly s.r.o.
 ## Features
 
   * Input Power status LED indicator
-  * Optionally possible to solder pass-trough I²C connectors to allow daisy chain of different sensors
+  * Optionally possible to solder pass-through I²C connectors to allow daisy chain of different sensors
   * Ability to isolate I2C bus segments by disconnecting frozen devices
   * Capability to handle differently the Master and a slave bus sides
   * The extender is capable to perform device reset in the case it seems to be frozen
