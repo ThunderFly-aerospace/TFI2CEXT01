@@ -1,0 +1,9 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+"J2","SM04B-GHS-TB","JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",-123.9460,144.4060,-90.0000,top
+"J4","SM04B-GHS-TB","JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",-104.5460,144.4060,90.0000,top
+"M1","HOLE","dira_3mm",-114.2460,136.9060,0.0000,top
+"M2","HOLE","dira_3mm",-114.2460,151.9060,0.0000,top
+"M3","HOLE","dira_3mm",-124.2460,136.9060,0.0000,top
+"M4","HOLE","dira_3mm",-124.2460,151.9060,0.0000,top
+"M5","HOLE","dira_3mm",-104.2460,151.9060,0.0000,top
+"M6","HOLE","dira_3mm",-104.2460,136.9060,0.0000,top
