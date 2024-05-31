@@ -96,6 +96,20 @@ Drill tools (including vias and computing adjusts and rounding):
 - 0.5 mm (20 mils) (47)
 - 3.0 mm (118 mils) (6)
 
+Solder paste stats:
+
+Using a paste with 87.75 % alloy, that has an specific gravity for the alloy of 7.4 g/cm³
+and 1.0 g/cm³ for the flux. This paste has an specific gravity of  4.15 g/cm³.
+
+The stencil thickness is  0.12 mm.
+
+| Side   | Pads with paste | Area [mm²] | Paste [g] |
+|--------|-----------------|------------|-----------|
+| Top    |              12 |      18.56 |      0.09 |
+| Bottom |              51 |      51.67 |      0.26 |
+| Total  |              63 |      70.22 |      0.35 |
+
+Note: this is just an approximation to the theoretical value. Margins of the solder mask and waste aren't computed.
 
 
 
