@@ -1,6 +1,6 @@
 # TFI2CEXT01A - I²C bus extender
 
-I²C bus extension module. This module allows extension of total lenght of I2C bus on the UAV.
+I²C bus extension module. This module allows an extension of the usable total length of the I2C bus on the UAV.
 
 ![Top view on I2C bus extender](/doc/img/TFI2CEXT01A_top.jpg)
 
@@ -19,20 +19,20 @@ ThunderFly TFI2CEXT01A counter is commercially available from [ThunderFly s.r.o.
 | Operating and storage temperature | -20 - +40°C | Limited by case material |
 | Operational input voltage | 3.6 - 5.4V |  |
 | Mass | ~2 g | PCB |
-| Dimensions | 15x25x6(10.5) | One sided connectors (With connector on both sides) |
+| Dimensions | 15x25x6(10.5) | One-sided connectors (With connector on both sides) |
 | Weather resistance | IP00 |  |
 
 ## Features
 
   * Input Power status LED indicator
-  * Optionally possible to solder pass-through I²C connectors to allow daisy chain of different sensors
+  * Optionally possible to solder pass-through I²C connectors to allow a daisy chain of different sensors
   * Ability to isolate I2C bus segments by disconnecting frozen devices
   * Capability to handle differently the Master and a slave bus sides
-  * The extender is capable to perform device reset in the case it seems to be frozen
-  * READY signal indication of correct connection of both I2C bus sides.
+  * The extender can perform a device reset in case it seems frozen or unresponsive.
+  * READY signal indication of the correct connection of both I2C bus sides.
 
 
-The two I²C Pixhawk connectors on the bottom and top are connected directly to each other. This feature allows easily nesting with other I²C devices on to existing functional bus cabling.
+The two I²C Pixhawk connectors on the bottom and top are connected directly. This feature allows easy nesting with other I²C devices onto existing functional bus cabling.
 
 ![Top view on I2C bus extender](/doc/img/TFI2CEXT01A_top.png)
 
@@ -40,7 +40,7 @@ The two I²C Pixhawk connectors on the bottom and top are connected directly to 
 
 ### Device Reset
 
-The TCA4307 has stuck bus recovery, which automatically disconnects the slave side of bus from master if it detects either SDAOUT or SCLOUT are low for about 40 ms. Once the bus is disconnected, the device automatically generates up to 16 pulses on SCLOUT to attempt to reset a device which is holding the whole bus low. 
+The TCA4307 has stuck bus recovery, which automatically disconnects the slave side of the bus from the master if it detects either SDAOUT or SCLOUT is low for about 40 ms. Once the bus is disconnected, the device automatically generates up to 16 pulses on SCLOUT to attempt to reset a device holding the whole bus low. The slave side of the bus is reconnected only in case the stuck bus device side is resolved. 
 
 ### PCB dimensions
 
@@ -50,10 +50,10 @@ The PCB is designed to be mounted in the slit and fixed by screws on the sides. 
 
 ## Usage
 
-The most I2C bus instances benefits from situation where TFI2CEXT will be connected in the middle of lenght beween master and slave. In that position the active signal amplification of TFI2CEXT will be the most efective for both signalling direction. 
-However, in the practical world not all I2C devices has the same driving capability and I2C signals are the mostly affected by capacitive load or coupling of unwanted signals. TFI2CEXT has ability to efectivelly isolate signal in the bus segments, which result to that the slave device or masters sees only a I²C bus wiring load in segment, until the connection to the TFI2CEXT. Therefore for that situation the adding the TFI2CEXT closer to the "problematic" I²C device should be the best option. 
+Most I2C bus instances benefit from situations where TFI2CEXT will be connected in the middle of the length between master and slave. In that position, the active signal amplification of TFI2CEXT will be the most effective for both signaling directions. 
+However, in the practical world not all I2C devices have the same driving capability, and I2C signals are mostly affected by capacitive load or coupling of unwanted signals. TFI2CEXT can effectively isolate signal in the bus segments, which results in the slave device or masters seeing only an I²C bus wiring load in the segment, until the connection to the TFI2CEXT. Therefore for that situation adding the TFI2CEXT closer to the "problematic" I²C device should be the best option. 
 
 ### Connection 
 
-Due to device reset capability of TFI2CEXT01 the special attention should be cared to proper connection of the module. The connector closer to the LEDS should be connected to Master (e.g. autopilot). The opopsite connector at far side from LEDs should be connected to I²C slaves, e.g. sensors. 
+Due to the device reset capability of TFI2CEXT01 special attention should be dedicated to the proper connection of the module to the UAV. The connector closer to the LEDS should be connected to the Master (e.g. autopilot). The opposite connector at the far side from LEDs should be connected to I²C slaves, e.g. sensors. 
 
