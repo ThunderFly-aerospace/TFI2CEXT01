@@ -1,10 +1,12 @@
 # TFI2CEXT01A - I²C bus extender
 
-I²C bus extension module. This module allows an extension of the usable total length of the I2C bus on the UAV.
+I²C bus extension module. This module allows an extension of the usable total length of the I2C bus on the UAV. Most I2C bus instances benefit from having TFI2CEXT positioned midway between master and slave, where its signal amplification is most effective in both directions.
 
 ![Top view on I2C bus extender](/doc/img/TFI2CEXT01A_top.jpg)
 
 ![Bottom view on I2C bus extender](/doc/img/TFI2CEXT01A_bottom.jpg)
+
+In practice, I2C devices vary in driving capability, and I2C signals are often affected by capacitive load or unwanted signal coupling. TFI2CEXT can effectively isolate bus segments, ensuring devices only see the segment's wiring load up to the TFI2CEXT. Thus, placing TFI2CEXT closer to the "problematic" I²C device is optimal.
 
 ## Where to get it?
 
@@ -40,7 +42,7 @@ The two I²C Pixhawk connectors on the bottom and top are connected directly. Th
 
 ### Device Reset
 
-The TCA4307 has stuck bus recovery, which automatically disconnects the slave side of the bus from the master if it detects either SDAOUT or SCLOUT is low for about 40 ms. Once the bus is disconnected, the device automatically generates up to 16 pulses on SCLOUT to attempt to reset a device holding the whole bus low. The slave side of the bus is reconnected only in case the stuck bus device side is resolved. 
+The TCA4307 has a stuck bus recovery feature. It disconnects the slave side if SDAOUT or SCLOUT is low for about 40 ms, then generates up to 16 pulses on SCLOUT to reset the bus. The slave side reconnects only after the issue is resolved.
 
 ### PCB dimensions
 
@@ -48,10 +50,9 @@ The TCA4307 has stuck bus recovery, which automatically disconnects the slave si
 
 The PCB is designed to be mounted in the slit and fixed by screws on the sides. The supposed screw diameter is metric 3mm e.g. DIN 912 M3 Hexagon socket Head Cap Screws.
 
-## Usage
+## Documentation
 
-Most I2C bus instances benefit from situations where TFI2CEXT will be connected in the middle of the length between master and slave. In that position, the active signal amplification of TFI2CEXT will be the most effective for both signaling directions. 
-However, in the practical world not all I2C devices have the same driving capability, and I2C signals are mostly affected by capacitive load or coupling of unwanted signals. TFI2CEXT can effectively isolate signal in the bus segments, which results in the slave device or masters seeing only an I²C bus wiring load in the segment, until the connection to the TFI2CEXT. Therefore for that situation adding the TFI2CEXT closer to the "problematic" I²C device should be the best option. 
+The additional documentation is available on the [ThunderFly docs website](https://docs.thunderfly.cz/avionics/TFI2CEXT/). 
 
 ### Connection 
 
